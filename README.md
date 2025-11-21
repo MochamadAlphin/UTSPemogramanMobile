@@ -56,22 +56,3 @@ Dengan state ini, UI akan selalu **reaktif** dan menampilkan data terbaru dari `
 
 ---
 
-## 4. Implementasi Logika di Folder `blocs/cart_cubit.dart`
-
-File `cart_cubit.dart` berisi logika bisnis:
-
-- **Menambah item ke keranjang**: `addToCart(ProductModel product)`  
-- **Menghapus item dari keranjang**: `removeFromCart(ProductModel product)`  
-- **Update jumlah item**: `updateQuantity(ProductModel product, int qty)`  
-- **Menghitung total item**: `totalItems`  
-- **Menghitung total harga**: `totalPrice`  
-- **Mengosongkan keranjang**: `clearCart()`  
-
-Semua perubahan state memicu `emit` sehingga UI yang menggunakan `BlocBuilder` atau `BlocConsumer` akan otomatis diperbarui.
-
----
-
-Dengan struktur ini, aplikasi mengikuti prinsip **Clean Architecture**:  
-- **Model**: `ProductModel` (mewakili data produk)  
-- **Cubit**: `CartCubit` (mengatur state dan logika keranjang)  
-- **UI**: `pages/cart_home_page.dart`, `pages/cart_summary_page.dart`, dan `widgets/product_card.dart` (menampilkan state)
