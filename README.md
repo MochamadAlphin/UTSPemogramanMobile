@@ -1,4 +1,9 @@
 
+
+Nama : Mochamad Alphin
+Kelas : 23CNS-A
+NIM : 23552011067
+
 ## 1. Perbedaan Cubit dan Bloc
 
 Cubit dan Bloc sama-sama digunakan untuk **state management**, tetapi ada perbedaan mendasar:
