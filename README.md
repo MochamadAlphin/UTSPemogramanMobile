@@ -1,5 +1,3 @@
-
-
 Nama : Mochamad Alphin
 Kelas : 23CNS-A
 NIM : 23552011067
